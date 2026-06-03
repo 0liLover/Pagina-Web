@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nimbus Drones</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Conexión del CSS -->
+<link rel="stylesheet" href="disenio.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="logo.png" alt="Nimbus Logo">
+    <span>NIMBUS</span>
+</div>
+
+</header>
+
+
+<main class="login-page">
+<section class="login-card">
+<h1>Bienvenido a Nimbus</h1>
+<p>Inicia sesión para acceder a la plataforma de drones autónomos.</p>
+
+<form class="login-form" id="loginForm">
+<label for="loginCorreo">Correo electrónico</label>
+<input id="loginCorreo" type="email" placeholder="ejemplo@correo.com" required>
+
+<label for="loginClave">Contraseña</label>
+<input id="loginClave" type="password" placeholder="Ingresa tu contraseña" required>
+
+<button type="submit">Iniciar sesión</button>
+
+<div id="loginError" class="alert alert-danger d-none mt-3" role="alert"></div>
+<div id="loginLoading" class="alert alert-info d-none mt-3" role="alert">Iniciando sesión...</div>
+</form>
+
+<p>Crea una cuenta.</p>
+
+<form class="login-form" id="registerFormIndex">
+<label for="registerCorreoIndex">Correo electrónico</label>
+<input id="registerCorreoIndex" type="email" placeholder="tu@correo.com" required>
+
+<label for="registerClaveIndex">Contraseña</label>
+<input id="registerClaveIndex" type="password" placeholder="Mínimo 6 caracteres" required>
+
+<label for="registerClaveConfirmIndex">Confirmar Contraseña</label>
+<input id="registerClaveConfirmIndex" type="password" placeholder="Repite tu contraseña" required>
+
+<button type="submit">Crear Cuenta</button>
+
+<div id="registerErrorIndex" class="alert alert-danger d-none mt-3" role="alert"></div>
+<div id="registerLoadingIndex" class="alert alert-info d-none mt-3" role="alert">Creando tu cuenta...</div>
+</form>
+
+<p><a class="skip-login" href="inicio.html">Continuar sin iniciar sesión</a></p>
+
+
+<footer>
+
+<p>© 2026 Nimbus Drones</p>
+
+</footer>
+
+</body>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Firebase Auth -->
+<script type="module" src="auth.js"></script>
+
+</html>
